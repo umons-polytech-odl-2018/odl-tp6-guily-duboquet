@@ -1,12 +1,32 @@
-public class IngredientsFeuille {
-    private string name;
-    private int price;
+public class IngredientsFeuille implements Food {
+    private String name;
+    private float price;
 
-    public IngredientsFeuille (Sring name,int price){
+    public IngredientsFeuille(String name, float price) {
         this.name = name;
         this.price = price;
     }
-    public String getName() {return name;}
 
-    public String getPrice() {return price;}
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public float getPrice() {
+        return price;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString(){
+        return "Food(" + "name=" + name + "price=" + price + ").";
+    }
 }
