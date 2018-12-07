@@ -9,14 +9,16 @@ public class IngredientsFeuille implements Food {
         this.price = price;
     }
 
-    @Override
-    public String getName() {
-        return name;
-    }
 
     @Override
     public double getPrice() {
-        return price;
+        return 0;
+    }
+
+    @Override
+    public String getName() {
+
+        return null ;
     }
 
     public void setName(String name) {
@@ -26,6 +28,8 @@ public class IngredientsFeuille implements Food {
     public void setPrice(double price) {
         this.price = price;
     }
+
+
 
     @Override
     public String toString(){

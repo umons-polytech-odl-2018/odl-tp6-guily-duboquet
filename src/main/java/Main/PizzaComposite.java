@@ -15,6 +15,12 @@ public abstract class PizzaComposite implements Food {
     @Override
     public double getPrice() {
         double price = 0;
+        return price;
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 
 }
