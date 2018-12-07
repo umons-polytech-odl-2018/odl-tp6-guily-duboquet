@@ -1,6 +1,8 @@
+package Main;
+
 public interface Food {
     public String getName();
-    public float getPrice();
+    public double getPrice();
     public String toString();
 }
 

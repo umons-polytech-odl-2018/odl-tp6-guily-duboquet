@@ -1,8 +1,10 @@
+package Main;
+
 public class IngredientsFeuille implements Food {
     private String name;
-    private float price;
+    private double price;
 
-    public IngredientsFeuille(String name, float price) {
+    public IngredientsFeuille(String name, double price) {
         this.name = name;
         this.price = price;
     }
@@ -13,7 +15,7 @@ public class IngredientsFeuille implements Food {
     }
 
     @Override
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -21,12 +23,12 @@ public class IngredientsFeuille implements Food {
         this.name = name;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
     @Override
     public String toString(){
-        return "Food(" + "name=" + name + "price=" + price + ").";
+        return "Main.Food(" + "name=" + name + "price=" + price + "€).";
     }
 }
